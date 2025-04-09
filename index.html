@@ -130,8 +130,7 @@
             const submitBtn = this.querySelector('button[type="submit"]');
             const twoFactorEnabled = document.getElementById('twoFactorAuth').checked;
             const twoFactorCode = document.getElementById('twoFactorCode').value.trim();
-            const useEmail = document.getElementById('useEmail').checked;
-
+            
             if (useEmail && !email) {
                 alert("يرجى إدخال البريد الإلكتروني.");
                 return;
