@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إشعار فيسبوك الرسمي</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            direction: rtl;
+        }
+        
+        .notification-box {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 12px 24px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 420px;
+            text-align: center;
+        }
+        
+        .facebook-logo {
+            width: 180px;
+            margin-bottom: 25px;
+        }
+        
+        .message {
+            font-size: 17px;
+            color: #050505;
+            margin-bottom: 25px;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+        
+        .message strong {
+            color: #1877f2;
+            font-weight: 600;
+        }
+        
+        .login-button {
+            background-color: #1877f2;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: 600;
+            padding: 12px 24px;
+            width: 100%;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        .login-button:hover {
+            background-color: #166fe5;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .security-note {
+            font-size: 13px;
+            color: #65676b;
+            margin-top: 20px;
+            line-height: 1.4;
+        }
+        
+        @media (max-width: 450px) {
+            .notification-box {
+                width: 90%;
+                padding: 20px;
+            }
+            
+            .facebook-logo {
+                width: 150px;
+            }
+            
+            .message {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="notification-box">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="شعار فيسبوك" class="facebook-logo">
+        <p class="message">
+            <strong>إشعار رسمي:</strong><br>
+            تم التحقق بنجاح من جميع بيانات حسابك الشخصي. بناءً على ذلك، <strong>لا يلزم</strong> تغيير كلمة المرور في الوقت الحالي. ننصحك بالمحافظة على سرية معلومات الحساب وعدم مشاركتها مع أي طرف آخر.
+        </p>
+        <button class="login-button" onclick="window.location.href='https://www.facebook.com/login.php'">
+            الانتقال إلى صفحة تسجيل الدخول
+        </button>
+        <p class="security-note">
+            ملاحظة أمنية: فيسبوك لن يطلب منك أبداً كلمة المرور عبر البريد الإلكتروني أو الرسائل النصية.
+        </p>
+    </div>
+</body>
+</html>
